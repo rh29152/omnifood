@@ -181,11 +181,11 @@ occupy this width if less then occupy whole container */
 }
 
 .step__img-box::after {
-    width: 50%;
+    width: 45%;
     /* it wont work 
     height: 60%; */
     /*trick used instead of height */
-    padding-bottom: 50%;
+    padding-bottom: 45%;
     background-color: #fae5d3;
     /* imp prop to set priority of appearing in a stack */
     z-index: -1;
