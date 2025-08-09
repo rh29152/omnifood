@@ -183,3 +183,66 @@ body {
     color: #fff;
     padding: 1.2rem 2.4rem;
 }
+
+/*******************************/
+/* HERO SECTION */
+/*******************************/
+
+.section-hero {
+    background-color: #fdf2e9;
+    padding: 0 3.2rem;
+}
+
+/* max-width says: if container size is greater than this width
+occupy this width if less then occupy whole container */
+.hero {
+    max-width: 130rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 6.4rem;
+    padding: 4.8rem 0 8rem 0;
+}
+
+.hero__description {
+    font-size: 2.4rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+}
+
+.hero__img {
+    width: 100%;
+}
+
+.delivered {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+.delivered__imgs img {
+    height: 4.8rem;
+    /* it adjust itself in allother browsers except
+     safari there is bug */
+    width: 4.8rem;
+    border-radius: 50%;
+    border: 3px solid #fdf2e9;
+    margin-right: -1.6rem;
+}
+
+.delivered__imgs img:last-child {
+    margin: 0;
+}
+
+.delivered__text {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.delivered__text span {
+    color: #cf711f;
+    font-weight: bold;
+    font-size: 2rem;
+}
