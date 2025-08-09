@@ -1,0 +1,185 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+medium: 500
+semi-bold:600
+bold: 700
+
+- Line heights
+Default: 1
+hero_heading: 1.05
+paragraph: 1.6
+
+
+- Letter spacing
+hero_heading: -0.5px
+
+--- 02 COLORS
+
+- Primary:
+ #e67e22
+- Tints:
+#fdf2e9
+- Shades:
+ #cf711f
+- Accents:
+- Greys
+#555
+#fff
+
+--- 05 SHADOWS
+
+--- 06 BORDER-RADIUS
+ -9px
+ 
+--- 07 WHITESPACE
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+
+/*******************************/
+/* GENERAL STYLES              */
+/*******************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* setting custom default(16px) font size 
+to set 1rem = default font size in px which
+helps to build fluit layouts */
+/* we need to set 62.5% which is 10px of 16px 
+keep in view user preference who wanna change
+in future */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+}
+
+.heading__primary {
+    font-size: 5.2rem;
+    line-height: 1.05;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 3.2rem;
+}
+
+.button:link,
+.button:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2.4rem;
+    padding: 1.6rem 3.2rem;
+    border-radius: 1.2rem;
+    /* smooth transition for bg */
+    transition: background-color 0.3s;
+}
+
+.button--full:link,
+.button--full:visited {
+    background-color: #e67e22;
+    color: #fff;
+}
+
+.button--full:hover,
+.button--full:active {
+    background-color: #cf711f;
+}
+
+.button--outline:link,
+.button--outline:visited {
+    background-color: #fff;
+    color: #555;
+}
+
+.button--outline:hover,
+.button--outline:active {
+    background-color: #fdf2e9;
+    /* it wont work here as its affecting layout */
+    /* border: 2px solid #fff; */
+    /* trick for inner border using box shadow inset */
+    box-shadow: inset 0 0 0 3px #fff;
+}
+
+.margin-right-sm {
+    margin-right: 1.6rem !important;
+}
+
+/*******************************/
+/* HEADER                      */
+/*******************************/
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fdf2e9;
+    /* setting fixed height because latter on 
+    we will make header sticky and for sticky headers
+    fixed height is good else we could add spacing using
+    top bottom padding*/
+    height: 9.6rem;
+    padding: 0 4.8rem;
+}
+
+.header__logo {
+    height: 2.4rem;
+}
+
+/*******************************/
+/* HEADER  NAVIGATION          */
+/*******************************/
+
+.header__nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+}
+
+.header__nav-link:link,
+.header__nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    font-size: 2rem;
+    transition: color 0.3s;
+}
+
+.header__nav-link:hover,
+.header__nav-link:active {
+    color: #cf711f;
+}
+
+.header__nav-link.header__nav-cta:link,
+.header__nav-link.header__nav-cta:visited {
+    text-decoration: none;
+    background-color: #e67e22;
+    color: #fff;
+    padding: 1.2rem 2.4rem;
+    border-radius: 9px;
+    transition: background-color 0.3s;
+}
+
+.header__nav-link.header__nav-cta:hover,
+.header__nav-link.header__nav-cta:active {
+    background-color: #cf711f;
+    color: #fff;
+    padding: 1.2rem 2.4rem;
+}
