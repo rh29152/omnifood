@@ -34,7 +34,7 @@ hero_heading: -0.5px
 #fff
 #333
 #ddd
-#888
+#888`
 
 --- letter spacing
 -0.5px
@@ -44,6 +44,7 @@ hero_heading: -0.5px
 
 --- 06 BORDER-RADIUS
  -9px
+ -11px
  
 --- 07 WHITESPACE
 - Spacing system (px)
@@ -139,7 +140,7 @@ body {
 
 .subheading {
     display: block;
-    font-size: 2rem;
+    font-size: 1.6rem;
     line-height: 1.2;
     text-transform: uppercase;
     color: #cf711f;
@@ -187,4 +188,35 @@ body {
 
 .margin-right-sm {
     margin-right: 1.6rem !important;
+}
+
+strong {
+    font-weight: 500;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.margin-right-md {
+    margin-bottom: 4.8rem !important;
+}
+
+.link:link,
+.link:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #e67e22;
+    border-bottom: 1px solid currentColor;
+    transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+    color: #cf711f;
+    /* this will disturb layout*/
+    /* border-bottom: none; */
+    /* trick to solve this */
+    border-bottom: 1px solid transparent;
 }
