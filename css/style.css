@@ -324,3 +324,200 @@ occupy this width if less then occupy whole container */
     height: 2.4rem;
     color: #e67e22;
 }
+
+
+/*******************************/
+/* TESTIMONIALS SECTION        */
+/*******************************/
+.section-testimonials {
+    background-color: #fdf2e9;
+    display: grid;
+    grid-template-columns: 50fr 45fr;
+}
+
+.testimonials__container {
+    padding: 9.6rem;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+}
+
+.testimonial__img {
+    width: 6.4rem;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+}
+
+.testimonial__text {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
+}
+
+.testimonial__name {
+    display: inline-block;
+    font-size: 1.6rem;
+    color: #6f6f6f;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    /* solved spaced problem in column rows*/
+    align-content: center;
+    padding: 1.6rem;
+}
+
+.gallery__item {
+    overflow: hidden;
+}
+
+.gallery__img {
+    display: block;
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.gallery__img:hover {
+    transform: scale(1.1);
+}
+
+/*******************************/
+/* PRICING SECTION             */
+/*******************************/
+
+.section-pricing {
+    padding: 9.6rem 0;
+}
+
+/* .pricing__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6.2rem;
+} */
+
+.pricing__card {
+    padding: 4.8rem;
+    width: 55%;
+    border-radius: 11px;
+}
+
+.pricing__card--starter {
+    justify-self: end;
+    border: 2px solid #fdf2e9;
+}
+
+.pricing__card--complete {
+    justify-self: start;
+    background-color: #fdf2e9;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing__card--complete::after {
+    content: "BEST VALUE";
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: #ffd43b;
+    padding: 0.8rem 8rem;
+    position: absolute;
+    top: 6%;
+    right: -18%;
+    transform: rotate(45deg);
+    color: #333;
+}
+
+.card__header {
+    margin-bottom: 4.8rem;
+}
+
+.card__heading {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 3.2rem;
+    color: #cf711f;
+    font-weight: 700;
+}
+
+.dollar-sign {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-right: 0.8rem;
+}
+
+.card__price-number {
+    display: inline-block;
+    font-size: 6.2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.6rem;
+}
+
+.card__text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #6f6f6f;
+}
+
+.card__features {
+    list-style: none;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    margin-bottom: 2.4rem;
+}
+
+.card__feature {
+    display: flex;
+    gap: 1.6rem;
+}
+
+.card__icon {
+    width: 3rem;
+    height: 3rem;
+    color: #e67e22;
+
+}
+
+.card__sign-up {
+    text-align: center;
+    margin-top: 4.8rem;
+}
+
+/*******************************/
+/* BENEFITS PART(PRICING SECTION)*/
+/*******************************/
+
+.benefits__heading {
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.benefit__icon {
+    color: #e67e22;
+    height: 3.2rem;
+    width: 3.2rem;
+    background-color: #fdf2e9;
+    margin-bottom: 3.2rem;
+    padding: 1.6rem;
+    border-radius: 50%;
+}
+
+.benefit__heading {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 2.4rem;
+}
+
+.benefit__text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+}

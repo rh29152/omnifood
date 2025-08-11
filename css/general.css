@@ -34,7 +34,8 @@ hero_heading: -0.5px
 #fff
 #333
 #ddd
-#888`
+#888
+#6f6f6f (lightest color allowed on #fdf2e9)
 
 --- letter spacing
 -0.5px
@@ -90,6 +91,18 @@ body {
     display: grid;
     column-gap: 5.2rem;
     row-gap: 9.6rem;
+    /* problemetic */
+    /* margin-bottom: 9.6rem; */
+}
+
+/* /* 1st memthod to solve this problem  */
+/* .grid:last-child {
+    margin-bottom: 0;
+} */
+
+/* 2nd way  */
+.grid:not(:last-child) {
+    margin-bottom: 9.6rem;
 }
 
 .grid--2-cols {
@@ -153,9 +166,10 @@ body {
 .button:visited {
     display: inline-block;
     text-decoration: none;
-    font-size: 2.4rem;
+    font-size: 2rem;
     padding: 1.6rem 3.2rem;
     border-radius: 1.2rem;
+    font-weight: 600;
     /* smooth transition for bg */
     transition: background-color 0.3s;
 }
@@ -198,7 +212,7 @@ strong {
     text-align: center;
 }
 
-.margin-right-md {
+.margin-bottom-md {
     margin-bottom: 4.8rem !important;
 }
 
