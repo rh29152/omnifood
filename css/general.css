@@ -36,6 +36,7 @@ hero_heading: -0.5px
 #333
 #ddd
 #888
+#767676 lightest grey allowed on #fff
 #6f6f6f (lightest color allowed on #fdf2e9)
 
 --- letter spacing
@@ -102,7 +103,7 @@ body {
 
 .grid {
     display: grid;
-    column-gap: 5.2rem;
+    column-gap: 6.4rem;
     row-gap: 9.6rem;
     /* problemetic */
     /* margin-bottom: 9.6rem; */
@@ -128,6 +129,10 @@ body {
 
 .grid--4-cols {
     grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--footer {
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 }
 
 .grid--center-v {

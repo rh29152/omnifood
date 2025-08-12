@@ -520,7 +520,7 @@ occupy this width if less then occupy whole container */
 /* CTA SECTION                 */
 /*******************************/
 .section-cta {
-    padding: 9.6rem 0;
+    padding: 4.8rem 0 12.8rem;
 }
 
 .cta {
@@ -594,4 +594,89 @@ select {
 .cta *:focus {
     outline: none;
     box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+/*******************************/
+/* footer SECTION                 */
+/*******************************/
+.section-footer {
+    padding: 12.8rem 0;
+    border-top: 1px solid rgba(71, 68, 65, 0.1);
+}
+
+.footer__logo {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.footer__omni-logo {
+    height: 2rem;
+    align-self: flex-start;
+}
+
+.social-links {
+    display: flex;
+    gap: 2.4rem;
+}
+
+.social-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+/* trick to give extra space in container as 
+this element margin top  */
+/* only works on last flex items  */
+.copyright {
+    margin-top: auto;
+}
+
+.copyright-text {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #767676;
+}
+
+.footer__heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.75px;
+    margin-bottom: 4rem;
+    color: #333;
+}
+
+.footer__address {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+}
+
+.footer__nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.footer__link,
+.footer__link:link,
+.footer__link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #767676;
+    font-size: 1.6rem;
+    transition: all 0.3s;
+}
+
+.footer__link:hover,
+.footer__link:active {
+    color: #555;
+}
+
+.footer__contact .footer__link,
+.footer__contact .footer__link:link,
+.footer__contact .footer__link:visited {
+    margin-bottom: 1.2rem;
 }
