@@ -396,12 +396,6 @@ occupy this width if less then occupy whole container */
     padding: 9.6rem 0;
 }
 
-/* .pricing__cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6.2rem;
-} */
-
 .pricing__card {
     padding: 4.8rem;
     width: 55%;
@@ -525,3 +519,79 @@ occupy this width if less then occupy whole container */
 /*******************************/
 /* CTA SECTION                 */
 /*******************************/
+.section-cta {
+    padding: 9.6rem 0;
+}
+
+.cta {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+    border-radius: 11px;
+    overflow: hidden;
+}
+
+.cta__img-box {
+    background-image: linear-gradient(to right bottom, rgba(235, 151, 78, 0.35), rgba(230, 125, 34, 0.35)), url(../img/eating.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* cta text*/
+.cta__text-box {
+    padding: 6.4rem;
+    color: #2e1907;
+}
+
+.cta .heading__secondary {
+    margin-bottom: 3.2rem;
+    color: inherit;
+}
+
+.cta__text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    font-weight: 400;
+    color: inherit;
+    margin-bottom: 4.8rem;
+}
+
+/* cta form styling  */
+
+.cta__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem;
+}
+
+.cta__form label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.cta__form input,
+select {
+    width: 100%;
+    padding: 1.4rem;
+    border-radius: 9px;
+    box-shadow: 0 0.1rem 0.2rem rgba(46, 25, 7, 0.50);
+    background-color: #fdf2e9;
+    font-family: inherit;
+    color: inherit;
+    font-size: 1.8rem;
+    border: none;
+}
+
+.cta__form input::placeholder {
+    font-size: 1.8rem;
+    color: #aaa;
+}
+
+.cta *:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
