@@ -96,9 +96,14 @@ occupy this width if less then occupy whole container */
 
 .delivered {
     display: flex;
-    gap: 2rem;
+    gap: 1.6rem;
     align-items: center;
     margin-top: 8rem;
+}
+
+/* fixed imgs wraping issue */
+.delivered__imgs {
+    display: flex;
 }
 
 .delivered__imgs img {
