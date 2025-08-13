@@ -1,0 +1,30 @@
+/* 
+#### points
+  # condition in media query tag uses browser default font size 
+    i.e 1rem = 16 px not html one set as 10px
+  # In some browsers rem in condition has bug so use 
+    em instead 
+  # 1rem = 1em 
+  # rem is root font size and em is current font-size 
+ */
+
+/*******************************/
+/* Small laptops Query(1344px) */
+/*******************************/
+/* 1366px is an common screen hd so we will choose 
+ breakpoint between 1300 to 1366px ,now check for break 
+ in this range  */
+/* we choose at random 1350 ~1344 */
+@media (max-width:84em) {
+    .hero {
+        max-width: 120rem;
+    }
+
+    .heading__primary {
+        font-size: 4.8rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
