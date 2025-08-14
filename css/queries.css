@@ -6,6 +6,8 @@
     em instead 
   # 1rem = 1em 
   # rem is root font size and em is current font-size 
+  # media query as a rule of thumb should work for 200 to 300px
+    range from breakpoint
  */
 
 /*******************************/
@@ -21,10 +23,45 @@
     }
 
     .heading__primary {
-        font-size: 4.8rem;
+        font-size: 4.4rem;
     }
 
     .gallery {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/***********************************/
+/* Landscape tablets Query(1200px) */
+/***********************************/
+
+@media (max-width:75em) {
+
+    /* use of our imp responsive unit rem  */
+    /* 9px/16px = 56.25%  */
+    html {
+        font-size: 56.25%;
+    }
+
+    .heading__secondary {
+        font-size: 3.6rem;
+    }
+
+    .heading__tertiary {
+        font-size: 2.4rem;
+    }
+
+    .grid {
+        column-gap: 4.8rem;
+        row-gap: 6.4rem;
+    }
+
+    .header__nav-list {
+        gap: 3.2rem;
+    }
+
+    .testimonials__container {
+        padding: 4.8rem;
     }
 }
