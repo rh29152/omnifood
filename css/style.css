@@ -461,7 +461,7 @@ occupy this width if less then occupy whole container */
 
 .card__text {
     font-size: 1.6rem;
-    line-height: 1.6;
+    line-height: 1.2;
     color: #6f6f6f;
 }
 
