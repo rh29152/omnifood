@@ -13,6 +13,8 @@
     top bottom padding*/
     height: 9.6rem;
     padding: 0 4.8rem;
+    /* mobile nav  */
+    position: relative;
 }
 
 .header__logo {
@@ -60,6 +62,25 @@
     background-color: #cf711f;
     color: #fff;
     padding: 1.2rem 2.4rem;
+}
+
+/* mobile navigation  */
+.mobile-nav {
+    border: none;
+    background-color: #fdf2e9;
+}
+
+.mobile-nav__icon {
+    width: 4.8rem;
+    height: 4.8rem;
+    color: #333;
+}
+
+.mobile-nav__icon[name="close-outline"] {
+    display: none;
+}
+.mobile-nav__icon[name="menu-outline"] {
+    display: none;
 }
 
 /*******************************/

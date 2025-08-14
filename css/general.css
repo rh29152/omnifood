@@ -86,6 +86,8 @@ in future */
 
 html {
     font-size: 62.5%;
+    /* mobile nav  */
+    overflow-x: hidden;
 }
 
 body {
@@ -93,6 +95,8 @@ body {
     font-weight: 400;
     line-height: 1;
     color: #555;
+    /* mobile nav  */
+    overflow-x: hidden;
 }
 
 .container {

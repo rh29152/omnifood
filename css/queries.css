@@ -131,4 +131,60 @@
     .button--form {
         margin-top: 1.2rem;
     }
+
+    /* mobile nav handling  */
+    .mobile-nav__icon[name="menu-outline"] {
+        display: flex;
+    }
+
+    .header__nav {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.95);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+        transition: all 0.3s ease-in;
+        transform: translateX(100%);
+
+        /*Hide navigation */
+        /* but this allows no transition at all  */
+        /* display: none; */
+        /* other method */
+
+        /* 1) hide it visually  */
+        opacity: 0;
+        /* 2) make it unaccessible to mouse and keyboard  */
+        pointer-events: none;
+        /* 3) hide it from screen readers  */
+        visibility: hidden;
+    }
+
+    .nav-open .header__nav {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+    }
+
+    .nav-open .mobile-nav__icon[name="close-outline"] {
+        display: block;
+    }
+
+    .nav-open .mobile-nav__icon[name="menu-outline"] {
+        display: none;
+    }
+
+    .header__nav-list {
+        flex-direction: column;
+    }
+
+    .header__nav-link:link,
+    .header__nav-link:visited {
+        font-size: 3rem;
+    }
+
 }
