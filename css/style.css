@@ -66,10 +66,9 @@
 
 /* mobile navigation  */
 .mobile-nav {
+    display: none;
     border: none;
     background-color: #fdf2e9;
-    /* focus mode bug  */
-    z-index: 9999;
 }
 
 .mobile-nav__icon {

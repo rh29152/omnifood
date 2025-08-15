@@ -163,6 +163,12 @@
         visibility: hidden;
     }
 
+    .mobile-nav {
+        display: block;
+        /* focus mode bug  */
+        z-index: 9999;
+    }
+
     .nav-open .header__nav {
         opacity: 1;
         pointer-events: auto;
