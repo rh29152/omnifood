@@ -13,10 +13,42 @@ yearEL.textContent = currentYear;
 const navEL = document.querySelector(".mobile-nav");
 const headerEL = document.querySelector(".header");
 
-headerEL.addEventListener("click", function () {
+navEL.addEventListener("click", function () {
   headerEL.classList.toggle("nav-open");
 });
 
+/****************************/
+/*Smooth Scrolling effect   */
+/****************************/
+
+const allLinks = document.querySelectorAll("a:link");
+
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+
+    // scroll to homepage
+    if (href === "#") {
+      console.log("hello");
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+
+    //scroll to all other links
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+
+    // hide mobile nav after click
+    if (link.classList.contains("header__nav-link")) {
+      headerEL.classList.toggle("nav-open");
+    }
+  });
+});
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {

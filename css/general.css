@@ -88,6 +88,11 @@ html {
     font-size: 62.5%;
     /* mobile nav  */
     overflow-x: hidden;
+
+    /* making scroll behaviour smooth  for nav links*/
+    /* but this dont work in other browsers like safari 
+    and we solve it using js */
+    /* scroll-behavior: smooth; */
 }
 
 body {
