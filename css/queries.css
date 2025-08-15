@@ -190,7 +190,7 @@
 }
 
 /***********************************/
-/*   small tablets Query(704px)    */
+/*   smaller tablets Query(704px)  */
 /***********************************/
 @media (max-width:44em) {
     .heading__secondary {
@@ -225,4 +225,89 @@
     .footer__contact {
         grid-column: span 3;
     }
+}
+
+/***********************************/
+/*  Phones Query(544px)  */
+/***********************************/
+@media (max-width:34em) {
+
+    .grid--3-cols,
+    .grid--2-cols,
+    .grid--4-cols {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        padding: 0 2.4rem;
+    }
+
+    .section-hero {
+        padding: 2.4rem 0 6.4rem 0
+    }
+
+    .hero {
+        padding: 0 4.8rem;
+    }
+
+    .button,
+    .button:link,
+    .button:visited {
+        font-size: 1.8rem;
+        padding: 1.6rem;
+    }
+
+    .delivered__text {
+        font-size: 1.4rem;
+    }
+
+    .hero__img {
+        width: 100%;
+    }
+
+    .logos {
+        gap: 1rem;
+    }
+
+    .logo {
+        height: 1.2rem;
+    }
+
+    .section-how {
+        padding: 6.4rem 0;
+    }
+
+    .step__img-box:nth-child(2) {
+        grid-row: 1;
+    }
+
+    .step__img-box:nth-child(6) {
+        grid-row: 5;
+    }
+
+    .step__img-box {
+        transform: translateY(4.8rem);
+    }
+
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .cta {
+        grid-template-columns: 1fr;
+    }
+
+    .cta__img-box {
+        height: 32rem;
+        grid-row: 1;
+    }
+
+    .cta__text-box {
+        padding: 3.2rem;
+    }
+
 }
