@@ -6,6 +6,17 @@ const yearEL = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 yearEL.textContent = currentYear;
 
+/****************************/
+/* Mobile nav functionality */
+/****************************/
+
+const navEL = document.querySelector(".mobile-nav");
+const headerEL = document.querySelector(".header");
+
+headerEL.addEventListener("click", function () {
+  headerEL.classList.toggle("nav-open");
+});
+
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
