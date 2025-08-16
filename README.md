@@ -45,7 +45,7 @@ This landing page was created to practice frontend fundamentals and showcase mod
 
 👉 [Live Demo](https://aiomni.netlify.app/)  
 
-![Omnifood Preview](./images/hero-presentation.png)  
+![Omnifood Preview](./imag/hero-presentation.jpg)  
 
 ---
 
@@ -56,4 +56,4 @@ omnifood/
 │── index.html   # Main HTML file
 │── style.css    # Stylesheet with responsive design
 │── script.js    # Small JS for navigation & smooth scroll
-│── /images      # Project images
+│── /img      # Project images
