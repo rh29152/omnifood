@@ -91,10 +91,14 @@
     position: fixed;
     width: 100%;
     height: 8rem;
-    padding-left: 0;
+    padding-top: 0;
     padding-bottom: 0;
     background-color: rgba(255, 255, 255, 0.97);
     z-index: 999;
+}
+
+.sticky .mobile-nav {
+    background-color: rgba(255, 255, 255, 0.97);
 }
 
 /*******************************/
