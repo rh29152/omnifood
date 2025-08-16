@@ -35,22 +35,6 @@ navEL.addEventListener("click", function () {
   toggleScrollBlock();
 });
 
-/************************************/
-/*scrolling disable while nav open  */
-/***********************************/
-function toggleScrollBlock() {
-  const html = document.documentElement;
-  const body = document.body;
-  const isBlocked =
-    html.style.overflow === "hidden" && body.style.overflow === "hidden";
-  if (isBlocked) {
-    html.style.overflow = "";
-    body.style.overflow = "";
-  } else {
-    html.style.overflow = "hidden";
-    body.style.overflow = "hidden";
-  }
-}
 /****************************/
 /*Smooth Scrolling effect   */
 /****************************/
@@ -80,6 +64,7 @@ allLinks.forEach(function (link) {
     // hide mobile nav after click
     if (link.classList.contains("header__nav-link")) {
       headerEL.classList.toggle("nav-open");
+      toggleScrollBlock();
     }
   });
 });
