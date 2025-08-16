@@ -176,6 +176,7 @@
         pointer-events: auto;
         visibility: visible;
         transform: translateX(0);
+        /* overflow: hidden; */
     }
 
     .nav-open .mobile-nav__icon[name="close-outline"] {
